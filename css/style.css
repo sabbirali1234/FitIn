@@ -1,0 +1,942 @@
+@font-face {
+    font-family: "ClashDisplay-Variable";
+    src: url(../fonts/ClashDisplay-Variable.ttf);
+}
+
+@font-face {
+    font-family: "Akira-Expanded";
+    src: url(../fonts/Akira-Expanded.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+        max-width: 1850px !important;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px !important;
+}
+
+
+
+:root {
+    --yellow-color: rgba(242, 255, 0, 1);
+    --text-color: rgba(113, 113, 117, 1);
+    --btn-color: rgba(170, 106, 170, 1);
+    --primary-color: rgba(255, 255, 255, 1);
+    --black-color: rgba(0, 0, 0, 1);
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+figure {
+    margin: 0 !important;
+}
+
+ul {
+    padding-left: 0px !important;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< common-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.container-1 {
+    max-width: 1720px !important;
+}
+
+.container-2 {
+    max-width: 1920px !important;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 auto;
+}
+
+.cmn-hdr-h2 {
+    position: relative;
+    font-family: "Akira-Expanded";
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    padding-left: 41px;
+    color: var(--primary-color);
+}
+
+.cmn-hdr-h2::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background: transparent;
+    border: 5px solid var(--yellow-color);
+}
+
+.cmn-hdr-h3 {
+    max-width: 860px;
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    background: linear-gradient(86.67deg, #FFFFFF 7.12%, rgba(255, 255, 255, 0) 95.64%);
+    background-clip: text;
+    color: transparent;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.header-sec {
+    padding-top: 60px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    width: 172px !important;
+    height: 74px !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px !important;
+    border-radius: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    background: rgba(255, 255, 255, 0.16) !important;
+    backdrop-filter: blur(13px);
+    /* z-index: 99999; */
+    /* position: relative; */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
+
+.active {
+    padding: 23px 39px !important;
+    border-radius: 110px;
+    background: var(--yellow-color);
+}
+
+.fa-angle-down {
+    font-size: 14px;
+}
+
+.Search {
+    width: 370px;
+    height: 64px;
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color) !important;
+    opacity: 1;
+    border-radius: 74px;
+    padding: 18px 15px 18px 45px;
+    background: var(--black-color);
+    border: none;
+    outline: none;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    font-size: 24px;
+    margin: 20px 0px 0px 12px;
+    color: var(--primary-color);
+}
+
+.shopping-bag {
+    padding: 18px 20px 20px 20px;
+    background: var(--yellow-color);
+    border-radius: 32px;
+}
+
+.login {
+    width: 319px;
+    height: 77px;
+    font-family: "ClashDisplay-Variable";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 41px;
+    border-radius: 37.5px;
+    border: 2px solid var(--yellow-color);
+    background-color: rgba(255, 247, 0, 0.1) !important;
+    outline: none;
+}
+
+.login1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    opacity: 1;
+    border-radius: 29px;
+    background: var(--Yellow, rgba(242, 255, 0, 1));
+    margin: 20px 0px 0px 270px;
+    color: var(--black-color) !important;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< banner-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.banner-sec {
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 30, 30, 0),  rgba(30, 30, 30, 0), rgba(30, 30, 30, 0), var(--black-color)), url('../image/banner-image.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner-main {
+    padding-top: 886px;
+    padding-bottom: 61px;
+}
+
+.banner-header h1 {
+    font-family: "Akira-Expanded";
+    font-weight: 800;
+    font-size: 141px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+}
+
+.banner-header h1 div {
+    color: var(--yellow-color);
+}
+
+.Visit {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color) !important;
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.banner-line {
+    position: relative;
+    width: 280px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+.banner-content p {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    background: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.banner-content-img-div {
+    margin: 40px 0px;
+}
+
+.banner-content-img:first-child {
+    margin-left: 0;
+}
+
+.banner-content-img {
+    margin-left: -26px;
+}
+
+.Membership {
+    max-width: 300px;
+    font-family: "ClashDisplay-Variable";
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
+.Membership span {
+    color: var(--yellow-color);
+}
+
+.Scroll {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    padding-left: 16px;
+    color: var(--primary-color);
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< card-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.card-sec {
+    padding: 0px 0px 80px 0px;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+.swiper-slide {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.card {
+    padding: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+.card-img-div {
+    width: 69px;
+}
+
+.card-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-1 {
+    background-image: url("../image/card-bg-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img-2 {
+    background-image: url("../image/card-bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img-3 {
+    background-image: url("../image/card-bg-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card h2 {
+    font-family: "Akira-Expanded";
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+
+.card .number {
+    font-family: "Akira-Expanded";
+    font-weight: 800;
+    font-size: 139px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: transparent;
+    /* background-color: transparent; */
+    -webkit-text-stroke: 2px var(--text-color);
+}
+.card-main-img-1 {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 197px;
+}
+
+.card-main-img-2 {
+    position: absolute;
+    right: 38px;
+    bottom: 0;
+    width: 201px;
+}
+
+.card-main-img-3 {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 485px;
+}
+
+.card-main-img-1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-main-img-2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-main-img-3 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper {
+    /* overflow: visible; */
+}
+.mySwiper {
+    padding-top: 61px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< About-Our-Gym-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.About-Gym-sec {
+    padding: 80px 0px;
+    background-color: var(--black-color);
+}
+
+.cmn-hdr-img {
+    margin-left: 24px;
+}
+
+.About-Gym-top-div {
+    padding: 80px 0px;
+}
+
+.About-Gym-child-div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.About-Gym-child-div h4 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.About-Gym-child-div p {
+    max-width: 390px;
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    margin: 0px auto 30px auto !important;
+}
+
+.gym-number-child a img {
+    background-color: var(--yellow-color);
+    margin-right: 24px;
+}
+
+.gym-span-1 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gym-span-2 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--yellow-color);
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Services-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.Services-sec {
+    padding: 80px 0px;
+    background-color: var(--black-color);
+}
+
+.Services-child-div span {
+    font-family: 'Akira-Expanded';
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
+
+.Services-inner {
+    padding: 65px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.Services-icon {
+    color: var(--primary-color);
+    /* background: var(--yellow-color); */
+    text-align: end;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< About-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.About-sec {
+    padding: 80px 0px;
+    background-image: url('../image/About-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.About-main-div {
+    padding-top: 80px;
+}
+
+.About-card {
+    border: 1px solid;
+    border-image: linear-gradient(to right bottom, #F2FF00, rgba(242, 255, 0, 0)) 1;
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+/* .About-main-img {
+    width: 100%;
+} */
+
+.About-main-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< meet-your-coaches-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.meet-sec {
+    padding: 80px 0px 80px 0px;
+    background-color: var(--black-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.meet-top-div {
+    /* padding-bottom: 80px; */
+}
+
+.swiper-slide {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.meet-card {
+    width: 100%;
+    min-height: 452px;
+    padding: 24px;
+    position: relative;
+    z-index: 99;
+}
+
+.meet-img-div {
+    width: 69px;
+    position: relative;
+    top: 296px;
+}
+
+.meet-img-div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meet-img-1 {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 1)), url("../image/meet-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.meet-img-2 {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 1)), url("../image/meet-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.meet-img-3 {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 1)), url("../image/meet-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.meet-card h2 {
+    font-family: "Akira-Expanded";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-top: 15px;
+    position: relative;
+    top: 296px;
+}
+
+.meet-card p {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 200;
+    font-size: 53px;
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    position: relative;
+    top: 296px;
+}
+
+.meet-main-img-1, .meet-main-img-2,
+.meet-main-img-3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* .meet-main-img-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 550.4px;
+
+}
+
+.meet-main-img-3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 550.4px;
+
+} */
+
+.meet-main-img-1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meet-main-img-2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meet-main-img-3 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper {
+    /* overflow: visible; */
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+.modal-backdrop{
+    display: none !important;
+}
+.modal-backdrop.show {
+    /* opacity: 0 !important; */
+}
+
+.offcanvas-end {
+    /* transform: translateX(100%) !important; */
+}
+
+body {
+    overflow: visible !important;
+    padding-right: 0px !important;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.mySwiper1 {
+    padding: 80px 0px;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0px !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--yellow-color) !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -60px !important;
+    padding: 58px !important;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Choose-Your-Plan-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.Plan-sec {
+    padding: 80px 0px;
+    background-color: var(--black-color);    
+    position: relative;
+    overflow: hidden;
+}
+
+.Plan-top-div {
+    padding-bottom: 80px;
+}
+
+.Plan-card {
+    padding: 24px;
+    position: relative;
+    z-index: 99;
+    background-image:  linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 1)), url("../image/Plan-bg.png");
+    min-height: 613px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.plan-line-img-div img {
+    position: absolute;
+    rotate: 90deg;
+    right: -105px;
+    top: 270px;
+}
+
+.Plan-card h4 {
+    font-family: 'Akira-Expanded';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.Plan-card p {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
+
+.Plan-card span {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 600;
+    font-size: 53px;
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin: 100px 0px 25px 0px;
+    display: inline-block;
+}
+
+.Plan-card span sup {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 500;
+    font-size: 0.60em;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
+
+.Plan-card ul li {
+    list-style: none;
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    padding: 5px 0px;
+}
+
+.Plan-card ul li img {
+    margin-right: 10px;
+}
+
+.Plan-btn-div {
+    text-align: center;
+    width: 100%;
+    bottom: -80px;
+    position: relative;
+}
+
+.Plan-btn-div a {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-width:  1px 5px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-right-color: var(--yellow-color);
+    border-left-color: var(--yellow-color);
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.Plan-btn-div a:hover {
+    color: var(--black-color);
+    background-color: var(--yellow-color);
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< our-locations-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.locations-sec {
+    padding: 80px 0px;
+    background-color: var(--black-color);
+}
+
+.locations-content h3 {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-top: 80px;
+}
+
+.global {
+    background: linear-gradient(86.67deg, #FFFFFF 7.12%, rgba(255, 255, 255, 0) 95.64%);
+    background-clip: text;
+    color: transparent;
+}
+
+.locations-span-1 {
+    color: var(--yellow-color);
+}
+
+.locations-span-2 {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Real-Transformation-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.Real-sec {
+    background-color: var(--black-color);
+    padding: 80px 0px;
+}
+
+.Real-bg-div {
+    background-image: url("../image/Real-bg.png");
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.Real-main-div {
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

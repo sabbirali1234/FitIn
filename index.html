@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- font-awesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap-css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- header-section -->
+
+<header class="header-sec">
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container">
+    <div class="navbar-brand">
+        <a class="nav-logo" href="#"><img src="image/Logo.png" alt=""></a>
+    </div>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Workouts</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Trainers</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Testimonials</a>
+        </li>
+        <form class="d-flex">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="Search me-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="shopping-bag">
+                <a href=""><img src="image/shopping-bag.png" alt=""></a>
+            </div>
+        </form>
+      </ul>
+      <form class="d-flex">
+            <input class="login mx-3" type="search" placeholder="login / create account" aria-label="Search">
+            <a class="login1" href=""><i class="fa-solid fa-arrow-right login-icon"></i></a>
+        </form>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- ////////////////////////////// -->
+<div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav mb-3">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Features
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="#">Workouts</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Trainers</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+    </ul>
+
+    <form class="d-flex">
+      <input class="login mx-3" type="text" placeholder="login / create account">
+      <i class="fa-solid fa-arrow-right login-icon"></i>
+    </form>
+  </div>
+</div>
+
+
+<!-- banner-section -->
+
+<section class="banner-sec">
+    <div class="container">
+        <div class="row banner-main">
+            <div class="col-xl-4 col-12 banner-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Nullam vitae leo sed scelerisque.</p>
+                <div class="banner-content-img-div">
+                    <img class="banner-content-img" src="./image/banner-content-1.png" alt="">
+                    <img class="banner-content-img" src="./image/banner-content-2.png" alt="">
+                    <img class="banner-content-img" src="./image/banner-content-3.png" alt=""><img class="gym-logo" src="./assets/Frame 7.png" alt="">
+                    <img class="banner-content-img" src="./image/banner-content-4.png" alt="">
+                </div>
+                <div class="Membership">
+                    <span>12k +</span> Membership Enjoy Our Programs
+                </div>
+                <div class="Scroll">Scroll</div>
+            </div>
+            <div class="col-xl-8 col-12 banner-header">
+                <h1>FocusFuel<div>Fitness <img src="image/banner-header-img.png" alt=""></div></h1>
+                <a class="Visit" href="">Visit Now <img src="image/Visit-icon.png" alt=""></a>
+                <span class="banner-line"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- card-section -->
+
+<section class="card-sec">
+    <div class="container-2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="card card-img-1">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>personal training</h2>
+                <p class="number">01</p>
+                <div class="card-main-img-1">
+                    <img src="./image/card-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-2">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>group workout</h2>
+                <p class="number">02</p>
+                <div class="card-main-img-2">
+                    <img src="./image/card-img-2.png" alt="">
+                </div>
+                <!-- <img class="card-main-img-2" src="./image/card-img-2.png" alt=""> -->
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-3">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>muscle building</h2>
+                <p class="number">03</p>
+                <div class="card-main-img-3">
+                    <img src="./image/card-img-3.png" alt="">
+                </div>
+                <!-- <img class="card-main-img-3" src="./image/card-img-3.png" alt=""> -->
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-1">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>personal training</h2>
+                <p class="number">01</p>
+                <div class="card-main-img-1">
+                    <img src="./image/card-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-2">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>group workout</h2>
+                <p class="number">02</p>
+                <div class="card-main-img-2">
+                    <img src="./image/card-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-3">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>muscle building</h2>
+                <p class="number">03</p>
+                <div class="card-main-img-3">
+                    <img src="./image/card-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-1">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>personal training</h2>
+                <p class="number">01</p>
+                <div class="card-main-img-1">
+                    <img src="./image/card-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-2">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>group workout</h2>
+                <p class="number">02</p>
+                <div class="card-main-img-2">
+                <img src="./image/card-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card card-img-3">
+                <div class="card-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>muscle building</h2>
+                <p class="number">03</p>
+                <div class="card-main-img-3">
+                <img class="card-main-img-3" src="./image/card-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- About-Our-Gym-section -->
+
+<section class="About-Gym-sec">
+    <div class="container container-1">
+        <div class="About-Gym-top-div d-flex justify-content-between flex-wrap flex-lg-nowrap">
+            <h2 class="cmn-hdr-h2">About Our Gym<img class="cmn-hdr-img" src="./image/3-line-img.png" alt=""></h2>
+            <h3 class="cmn-hdr-h3">Empowering Every Body to Move Stronger, Live Better, and Go Further</h3>
+        </div>
+        <div class="About-Gym-main-div row">
+            <div class="About-Gym-child-div col-lg-6 col-12">
+                <img src="./image/About-Gym-img.png" alt="">
+            </div>
+            <div class="About-Gym-child-div col-lg-6 col-12">
+                <h4>We believe fitness is more than just physical. It’s about building confidence, discipline, and a lifestyle you can be proud of.</h4>
+                <div class="gym-para row">
+                    <p class="col">Founded with  the version of  creating a spacet for all fitness levels .Our gym offers expert guidence modern equipment and an uplifting atmosphere to help you achieve your goals.</p>
+                    <p class="col">Whether you’re a beginner or a seasoned athlete. We’re here to support your journey with personalized training, diverse programs and a community that
+                        motivates you every step of the way</p>
+                    <div class="gym-number-div d-flex">
+                        <div class="gym-number-child">
+                            <a href="">
+                                <img src="./image/gym-icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="gym-number-child">
+                            <span class="gym-span-1">CUSTOMER SUPPORT</span>
+                            <span class="gym-span-2">(888)4000-2424</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services-section -->
+
+<section class="Services-sec">
+    <div class="container container-1">
+        <div class="Services-main-div row">
+            <div class="Services-child-div col-lg-4">
+                <h2 class="cmn-hdr-h2">Services <img class="cmn-hdr-img" src="./image/3-line-img.png" alt=""></h2>
+            </div>
+            <div class="Services-child-div col-lg-8">
+                <div class="Services-inner d-flex justify-content-between">
+                    <span>PERSONAL TRAINING</span>
+                    <img src="./image/Services-icon.png" alt="">
+                </div>
+                <div class="Services-inner d-flex justify-content-between">
+                    <span>GROUP TRAINING</span>
+                    <img src="./image/Services-icon.png" alt="">
+                </div>
+                <div class="Services-inner d-flex justify-content-between">
+                    <span>CORPORATE TRAINING</span>
+                    <img src="./image/Services-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About-section -->
+
+<section class="About-sec">
+    <div class="container container-1">
+        <div class="About-top-div d-flex justify-content-between flex-wrap flex-lg-nowrap">
+            <h2 class="cmn-hdr-h2">About Gym sec <img src="./image/3-line-img.png" alt=""></h2>
+            <h3 class="cmn-hdr-h3">Turn your  workout into a lifestyle that moves you forward</h3>
+        </div>
+        <div class="About-main-div row">
+            <div class="About-child-div col-12 col-lg-6">
+                <div class="About-main-img">
+                    <img src="./image/About-main-img.png" alt="">
+                </div>
+            </div>
+            <div class="About-child-div col-12 col-lg-6">
+                <div class="About-inner-child-div row">
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                    <div class="About-inner col-12 col-xl-6">
+                        <div class="About-card">
+                            <i class="fa-solid fa-check"></i>
+                            <h4>Certified & Experience Coachees</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Donec justo volutpat dictumst suspendisse sed sed at libero. Sed congue diam nisl lobortis diam ut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- meet-your-coaches-section -->
+
+<section class="meet-sec">
+    <div class="container">
+        <div class="meet-top-div d-flex justify-content-between flex-wrap flex-lg-nowrap">
+            <h2 class="cmn-hdr-h2">meet your coaches <img src="./image/3-line-img.png" alt=""></h2>
+            <h3 class="cmn-hdr-h3">Flexible Options for Beginners, Regulars, and Hardcore Athletes</h3>
+        </div>
+    </div>
+
+    <div class="container-2">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-1">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Ethan Cross</p>
+                <div class="meet-main-img-1">
+                    <img src="./image/meet-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-2">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Trent Morgan</p>
+                <div class="meet-main-img-2">
+                    <img src="./image/meet-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-3">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Damian Brooks</p>
+                <div class="meet-main-img-3">
+                    <img src="./image/meet-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-1">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Ethan Cross</p>
+                <div class="meet-main-img-1">
+                    <img src="./image/meet-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-2">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Trent Morgan</p>
+                <div class="meet-main-img-2">
+                    <img src="./image/meet-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-3">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Damian Brooks</p>
+                <div class="meet-main-img-3">
+                    <img src="./image/meet-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-1">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Ethan Cross</p>
+                <div class="meet-main-img-1">
+                    <img src="./image/meet-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-2">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Trent Morgan</p>
+                <div class="meet-main-img-2">
+                    <img src="./image/meet-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="meet-card meet-img-3">
+                <div class="meet-img-div">
+                    <img src="./image/3-line-img.png" alt="">
+                </div>
+                <h2>fitness coach</h2>
+                <p>Damian Brooks</p>
+                <div class="meet-main-img-3">
+                    <img src="./image/meet-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+</section>
+
+<!-- Choose-Your-Plan-section -->
+
+<section class="Plan-sec">
+    <div class="container">
+        <div class="Plan-top-div d-flex justify-content-between flex-wrap flex-lg-nowrap">
+            <h2 class="cmn-hdr-h2">Choose Your Plan <img src="./image/3-line-img.png" alt=""></h2>
+            <h3 class="cmn-hdr-h3">Flexible plans tailored to your goals—start your fitness journey today.</h3>
+        </div>
+    </div>
+    <div class="container-2">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>Basic</h4>
+                <p>For beginners taking that first steps into fitness</p>
+                <span>$30 <sup class="aaa">/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>pro</h4>
+                <p>Level up with advanced workouts and personalized guidance.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>elite</h4>
+                <p>Go all-in with premium coaching for maximum results.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>Basic</h4>
+                <p>For beginners taking that first steps into fitness</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>pro</h4>
+                <p>Level up with advanced workouts and personalized guidance.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>elite</h4>
+                <p>Go all-in with premium coaching for maximum results.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>Basic</h4>
+                <p>For beginners taking that first steps into fitness</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>pro</h4>
+                <p>Level up with advanced workouts and personalized guidance.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Plan-card">
+                <div class="plan-line-img-div">
+                    <img src="./image/plan-line-img.png" alt="">
+                </div>
+                <img src="./image/3-line-img.png" alt="">
+                <h4>elite</h4>
+                <p>Go all-in with premium coaching for maximum results.</p>
+                <span>$30 <sup>/ month</sup></span>
+                <ul>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> All Basic Features</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Unlimited Group Classes</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Progress & Body Tracking</li>
+                    <li><img src="./image/plan-checkmark-icon.png" alt=""> Locker Use</li>
+                </ul>
+                <div class="Plan-btn-div">
+                    <a href="">get membership</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+<!-- our-locations-section -->
+
+<section class="locations-sec">
+    <div class="container container-1">
+        <div class="locations-hdr">
+            <h2 class="cmn-hdr-h2">our locations <img class="cmn-hdr-img" src="./image/3-line-img.png" alt=""></h2>
+        </div>
+        <div class="locations-content">
+            <h3><span class="global">Our global presence:</span> <span class="locations-span-1">Fitness</span> <span class="locations-span-2">centers</span> <span class="locations-span-1">around the world</span></h3>
+        </div>
+        <div class="locations-main-div d-flex justify-content-between d-block">
+            <div class="locations-child-div">
+                <div>25<span>+</span></div>
+                <div class="countries">countries</div>
+            </div>
+            <div class="locations-child-div">
+                <p style="max-width: 1500px;">Our presence stretches across continents, connecting a worldwide community of fitness enthusiasts. From bustling metropolitan hubs to growing local neighborhoods, our fitness centers deliver the same trusted quality and results-driven training. Each location is equipped with expert coaches, modern facilities, and a motivating environment tailored to your goals. Whether you are traveling, relocating, or joining us for the first time, you’ll always find a home for your fitness journey with us. Together, we’re building a stronger, healthier world—one city at a time.</p>
+            </div>
+        </div>
+        <div class="locations-main-img">
+            <img src="./image/locations-main-img.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Real-Transformation-section -->
+
+<section class="Real-sec">
+    <div class="Real-bg-div">
+        <div class="container">
+            <div class="Real-main-div  text-center">
+                <div style="position: relative; bottom: -80px; z-index: 99;"><img src="./image/Real-main-img.png" alt=""></div>
+                <h2>Real Stories. Real People. <br> Real Transformation.</h2>
+                <!-- <img src="./image/3-line-img.png" alt=""> -->
+                <p>Join a community that supports your goals with expert coaching, flexible programs and real results. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- js-link -->
+    <script src="js/app.js"></script>
+    <!-- bootstrap-js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- swiper-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        loop: true,
+        // autoplay: true,
+        breakpoints: {
+            0: {
+            slidesPerView: 1,
+            },
+            800: {
+            slidesPerView: 2,
+            },
+            1400: {
+            slidesPerView: 3,
+            },
+      },
+    });
+
+        var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        // slidesPerGroup: 3,
+        loop: true,
+        // autoplay: true,
+        pagination: {
+        el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 3
+      },
+      breakpoints: {
+            0: {
+            slidesPerView: 1,
+            },
+            800: {
+            slidesPerView: 2,
+            },
+            1400: {
+            slidesPerView: 3,
+            },
+        }
+    });
+
+
+        var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            0: {
+            slidesPerView: 1,
+            },
+            800: {
+            slidesPerView: 2,
+            },
+            1400: {
+            slidesPerView: 3,
+            },
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
