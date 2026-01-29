@@ -85,6 +85,15 @@ ul {
     border: 5px solid var(--yellow-color);
 }
 
+.cmn-hdr-h2::after {
+    content: "";
+    width: 69px;
+    height: 24px;
+    position: absolute;
+    margin-left: 24px;
+    background-image: url("../image/3-line-img.png");
+}
+
 .cmn-hdr-h3 {
     max-width: 860px;
     font-family: "ClashDisplay-Variable";
@@ -134,6 +143,8 @@ ul {
     line-height: 100%;
     letter-spacing: 0px;
     color: var(--primary-color);
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .active {
@@ -163,10 +174,17 @@ ul {
     outline: none;
 }
 
-.fa-magnifying-glass {
+.fa-magnifying-glass-1 {
     position: absolute;
     font-size: 24px;
     margin: 20px 0px 0px 12px;
+    color: var(--primary-color);
+}
+
+.fa-magnifying-glass-2 {
+    display: none;
+    font-size: 26px;
+    margin: 17px 12px 0px 12px;
     color: var(--primary-color);
 }
 
@@ -210,20 +228,153 @@ ul {
     color: var(--black-color) !important;
 }
 
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mediya qurey >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (max-width: 1800px) {
+    .banner-header h1 {
+        font-size: 138px !important;
+    }
+    .Fitness::after {
+        margin-top: 59px !important;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .banner-header h1 {
+        font-size: 133px !important;
+    }
+    .Fitness::after {
+        margin-top: 58px !important;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .Search {
+        width: 250px;
+    }
+    .banner-header h1 {
+        font-size: 117px !important;
+    }
+    .Fitness::after {
+        margin-top: 43px !important;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .Search-div {
+        display: none;
+    }
+    .fa-magnifying-glass-2 {
+        display: block;
+    }
+    .banner-header h1 {
+        font-size: 110px !important;
+    }
+    .Fitness::after {
+        margin-top: 35px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .login {
+        width: 288px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .login1 {
+        margin: 20px 0px 0px 250px;
+    }
+    .banner-main {
+        padding-top: 570px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .banner-main {
+        padding-top: 200px !important;
+    }
+    .banner-header h1 {
+        font-size: 100px !important;
+    }
+    .banner-header {
+        padding-bottom: 40px;
+    }
+    .Fitness::after {
+        margin-top: 32px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-header h1 {
+        font-size: 80px !important;
+    }
+    .banner-header {
+        padding-bottom: 40px;
+    }
+    .Fitness::after {
+        margin-top: 15px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-header h1 {
+        font-size: 60px !important;
+    }
+    .Fitness::after {
+        width: 100px !important;
+        height: 33px !important;
+        margin-top: 13px !important;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .banner-header h1 {
+        font-size: 30px !important;
+    }
+    .Fitness::after {
+        width: 60px !important;
+        height: 20px !important;
+        margin-top: 4px !important;
+    }
+}
+
+
+
+
+
+
+
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< banner-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .banner-sec {
     width: 100%;
-    background-image: linear-gradient(rgba(30, 30, 30, 0),  rgba(30, 30, 30, 0), rgba(30, 30, 30, 0), var(--black-color)), url('../image/banner-image.png');
-    object-fit: cover;
+    background-image:  url('../image/banner-image.png');
+    /* object-fit: cover; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: fill;
+    /* background-size: cover; */
 
 }
 
 .banner-main {
     padding-top: 886px;
     padding-bottom: 61px;
+    flex-wrap: wrap-reverse;
 }
 
 .banner-header h1 {
@@ -235,6 +386,17 @@ ul {
     color: var(--primary-color);
     padding-bottom: 100px;
     margin-bottom: 0px;
+}
+
+.Fitness::after {
+    content: "";
+    width: 148px;
+    height: 50px;
+    position: absolute;
+    background-size: cover;
+    /* margin-left: 50px; */
+    margin-top: 66px;
+    background-image: url("../image/banner-header-img.png");
 }
 
 .banner-header h1 div {
@@ -272,6 +434,7 @@ ul {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    max-width: 550px;
 }
 
 .banner-content-img-div {
@@ -432,10 +595,6 @@ ul {
 .About-Gym-sec {
     padding: 80px 0px;
     background-color: var(--black-color);
-}
-
-.cmn-hdr-img {
-    margin-left: 24px;
 }
 
 .About-Gym-top-div {
@@ -866,6 +1025,7 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .global {
@@ -882,11 +1042,49 @@ body {
     color: var(--primary-color);
 }
 
+.locations-inner {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 700;
+    font-size: 81px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
 
+.locations-inner span {
+    color: var(--yellow-color);
+}
 
+.countries {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
 
+.locations-child-div p {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    max-width: 1500px;
+    padding-bottom: 90px;
+}
 
+/* .locations-main-img {
+    width: 1400px;
+} */
 
+.locations-main-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -937,6 +1135,5 @@ body {
 
 
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header-section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
