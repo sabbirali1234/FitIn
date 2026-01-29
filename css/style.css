@@ -364,9 +364,9 @@ ul {
 .banner-sec {
     width: 100%;
     background-image:  url('../image/banner-image.png');
-    object-fit: cover;
+    /* object-fit: cover; */
     background-repeat: no-repeat;
-    background-position: fill;
+    /* background-position: fill; */
     background-size: cover;
 
 }
